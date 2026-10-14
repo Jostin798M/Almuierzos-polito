@@ -1,0 +1,36 @@
+{
+  "name": "almuerzos-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test:parser": "tsx scripts/test-parser.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "5.3.0",
+    "@fontsource-variable/hanken-grotesk": "5.3.0",
+    "@supabase/supabase-js": "2.117.3",
+    "exceljs": "4.4.0",
+    "lucide-react": "1.56.0",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "autoprefixer": "10.6.1",
+    "postcss": "8.5.30",
+    "tailwindcss": "3.4.19",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

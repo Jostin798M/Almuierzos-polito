@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #ebeef3;
+  color: #151b2e;
+  font-family: "Hanken Grotesk Variable", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+:focus-visible {
+  outline: 2px solid #3866db;
+  outline-offset: 2px;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex min-h-[40px] items-center justify-center gap-2 rounded-md px-3.5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply btn bg-tinta text-white hover:bg-[#262f4a];
+  }
+  .btn-ghost {
+    @apply btn bg-white text-tinta shadow-ficha hover:bg-[#F4F6FA];
+  }
+  .btn-danger {
+    @apply btn bg-deuda text-white hover:bg-[#bf3b25];
+  }
+  .campo {
+    @apply min-h-[40px] w-full rounded-md bg-white px-3 text-sm text-tinta shadow-ficha placeholder:text-suave/70;
+  }
+  .panel {
+    @apply rounded-lg bg-papel shadow-ficha;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
